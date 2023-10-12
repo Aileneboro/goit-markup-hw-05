@@ -461,7 +461,6 @@ footer > div > a {
 
 .button-footer {
   display: flex;
-  gap: 16px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -473,6 +472,7 @@ footer > div > a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border: none;
+  border-radius: 4px;
   min-width: 165px;
   height: 40px;
   margin: 0 auto;
@@ -486,6 +486,7 @@ footer > div > a {
 
 .footer-button-icon {
   fill: #ffffff;
+  margin-left: 16px;
 }
 
 .footer-input {
@@ -524,6 +525,8 @@ footer > div > a {
   opacity: none;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -532,10 +535,13 @@ footer > div > a {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   border-radius: 4px;
   background-color: #fcfcfc;
   padding: 72px 24px 24px 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn {
@@ -552,7 +558,8 @@ footer > div > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-icon {
@@ -636,11 +643,15 @@ footer > div > a {
   letter-spacing: 0.04em;
   padding-left: 16px;
   padding-top: 8px;
-  color: inherit;
+  color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea {
+  margin-bottom: 16px;
 }
 
 .modal-text:focus {
@@ -648,7 +659,7 @@ footer > div > a {
 }
 
 .modal-checkbox {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .checkbox-label {
@@ -688,7 +699,7 @@ footer > div > a {
 
 .modal-window-btn {
   display: block;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
   background-color: #4d5ae5;
