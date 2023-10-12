@@ -651,12 +651,6 @@ footer > div > a {
   margin-bottom: 16px;
 }
 
-.checkbox-input {
-  width: 16px;
-  height: 16px;
-  fill: rgba(46, 47, 66, 0.4);
-}
-
 .checkbox-label {
   color: #8e8f99;
   font-size: 12px;
