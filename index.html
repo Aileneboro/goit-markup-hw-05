@@ -528,7 +528,25 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <button type="submit">Send</button>
+          <div class="modal-checkbox">
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              name="checkboxprivacy"
+              value="accept-privace"
+              id="checkbox-privacy"
+            />
+            <label class="checkbox-label" for="checkbox-privacy">
+              <span class="privacy-span">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-ok"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-policy" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="modal-window-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
