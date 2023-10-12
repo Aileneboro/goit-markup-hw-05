@@ -521,9 +521,9 @@ footer > div > a {
   top: 0;
   left: 0;
   background-color: rgba(46, 47, 66, 0.4);
-  /* opacity: none;
+  opacity: none;
   visibility: hidden;
-  pointer-events: none; */
+  pointer-events: none;
 }
 
 .modal {
